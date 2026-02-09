@@ -45,7 +45,7 @@ modelSpecs:
         modelLabel: "Jolty"
         promptCache: true
         thinking: false
-        greeting: Time to procrasti-nope. Quickly! ;)
+        greeting: Time to procrasti-nope :)
         promptPrefix: &prefix |
           You are supposed to keep me from procrastinating. 
           Give specific suggestions to do to improve my mood or get productive.
