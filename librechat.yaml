@@ -44,7 +44,7 @@ modelSpecs:
         max_tokens: 4096 # Maximum output tokens
         modelLabel: "Jolt"
         promptCache: true
-        thinking: true
+        thinking: false
         greeting: |
           Time to procrasti-nope ;)
         promptPrefix: |
@@ -68,7 +68,7 @@ modelSpecs:
         promptCache: true
         thinking: false
         greeting: |
-          Time to procrasti-nope. Quick! ;)
+          Time to procrasti-nope. Quickly! ;)
         promptPrefix: |
           I will talk to you when I’m procrastinating or have low energy. Give specific suggestions of actions to immediately do to improve my mood or get productive.
           Do not suggest I write things down, think of things on my own or make lists. Do not allow me to do unproductive things. Do not provide me with options or make me choose. Just concrete suggestions or commands of what to do.
