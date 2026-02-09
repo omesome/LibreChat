@@ -33,7 +33,7 @@ modelSpecs:
   prioritize: true
   list:
     - name: "jolt-slow"
-      label: "Jolt"
+      label: "Jolt 💡"
       webSearch: true
       default: true
       description: "Smart and talkative"
@@ -59,7 +59,7 @@ modelSpecs:
           You can ask me about a goal i want to work on and push me to do it in small steps, without accepting no or wanting to do other things.
 # Only ever suggest one action at a time.
     - name: "jolt-fast"
-      label: "Jolty"
+      label: "Jolty ⚡️"
       description: "fast and efficient"
       webSearch: true
       default: true
