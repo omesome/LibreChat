@@ -9,7 +9,7 @@ cache: true
 
 # Custom interface configuration
 interface:
-  customWelcome: "Hey {{user.name}}! Welcome to jolt.ai!"
+  customWelcome: "Hey {{user.name}}, welcome to Jolt. What's Up?"
   fileSearch: false
   endpointsMenu: false
   modelSelect: false
@@ -46,7 +46,7 @@ modelSpecs:
         promptCache: true
         thinking: false
         greeting: |
-          Time to procrasti-NOPE ;)
+          Time to procrasti-nope ;)
         promptPrefix: |
           I will talk to you when I’m procrastinating or have low energy. Give specific suggestions of actions to immediately do to improve my mood or get productive.
           Do not suggest I write things down, think of things on my own or make lists. Do not allow me to do unproductive things. Do not provide me with options or make me choose. Just concrete suggestions or commands of what to do.
