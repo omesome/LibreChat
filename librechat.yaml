@@ -1,0 +1,80 @@
+# For more information, see the Configuration Guide:
+# https://www.librechat.ai/docs/configuration/librechat_yaml
+
+# Configuration version (required)
+version: 1.2.1
+
+# Cache settings: Set to true to enable caching
+cache: true
+
+# Custom interface configuration
+interface:
+  customWelcome: "What's up?"
+  fileSearch: false
+  endpointsMenu: false
+  modelSelect: false
+  parameters: false
+  sidePanel: false
+  presets: false
+  prompts:
+    use: true
+    share: false
+    public: false
+  bookmarks: false
+  multiConvo: false
+  agents:
+    use: true
+    share: false
+    public: false
+  fileCitations: true
+
+modelSpecs:
+  enforce: true
+  prioritize: true
+  list:
+    - name: "jolt-bot"
+      label: "Jolt bot"
+      webSearch: true
+      default: true
+      description: "ProcrastiNOPE"
+      iconURL: "https://example.com/icon.png"
+      preset:
+        endpoint: "anthropic"
+        model: "claude-sonnet-4-5-20250929"
+        maxContextTokens: 128000 # Maximum context tokens
+        max_tokens: 4096 # Maximum output tokens
+        modelLabel: "Claude Sonnet 4.5"
+        promptCache: true
+        thinking: false
+        greeting: |
+          This assistant creates meeting notes based on transcripts of Teams recordings.
+          To start, simply paste the transcript into the chat box.
+        promptPrefix: |
+          I will talk to you when I’m procrastinating or have low energy. Give specific suggestions of actions to immediately do to improve my mood or get productive.
+          Do not suggest I write things down, think of things on my own or make lists. Do not allow me to do unproductive things. Do not provide me with options or make me choose. Just concrete suggestions or commands of what to do.
+          When you give commands ask “deal?”.
+          If I say i’ll do it, wait for me to check in after i’ve done it. Congratulate me and ask me how I feel, before offering more help.
+          After i followed commands, ask me about a goal i want to work on and push me to do it in small steps, without accepting no or wanting to do other things.
+          Only ever suggest one action at a time.
+
+# Memory configuration for user memories
+# memory:
+#   # (optional) Disable memory functionality
+#   disabled: false
+#   # (optional) Restrict memory keys to specific values to limit memory storage and improve consistency
+#   validKeys: ["preferences", "work_info", "personal_info", "skills", "interests", "context"]
+#   # (optional) Maximum token limit for memory storage (not yet implemented for token counting)
+#   tokenLimit: 10000
+#   # (optional) Enable personalization features (defaults to true if memory is configured)
+#   # When false, users will not see the Personalization tab in settings
+#   personalize: true
+#   # Memory agent configuration - either use an existing agent by ID or define inline
+#   agent:
+#     # Option 1: Use existing agent by ID
+#     id: "your-memory-agent-id"
+#     # Option 2: Define agent inline
+#     # provider: "openai"
+#     # model: "gpt-4o-mini"
+#     # instructions: "You are a memory management assistant. Store and manage user information accurately."
+#     # model_parameters:
+#     #   temperature: 0.1

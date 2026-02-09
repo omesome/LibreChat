@@ -68,7 +68,6 @@ bower_components/
 .flooignore
 
 #config file
-librechat.yaml
 librechat.yml
 
 # Environment
@@ -100,8 +99,7 @@ junit.xml
 **/venv/
 
 # docker override file
-docker-compose.override.yaml
-docker-compose.override.yml
+
 
 # meilisearch
 meilisearch
