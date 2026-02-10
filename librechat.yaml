@@ -69,7 +69,7 @@ modelSpecs:
         thinking: false
         greeting: Time to procrasti-nope 💡
         promptPrefix: *prefix
-    - name: "chatGPT"
+    - name: "chat-gpt"
       label: "JoltGPT 💡"
       description: "Smart and talkative"
       preset:
@@ -82,7 +82,7 @@ modelSpecs:
         thinking: false
         greeting: Time to procrasti-nope 💡
         promptPrefix: *prefix
-    - name: "chatGPT"
+    - name: "chat-gpt-mini"
       label: "JoltGPT mini ⚡️"
       description: "Smart and talkative"
       preset:
