@@ -70,27 +70,26 @@ modelSpecs:
         greeting: Time to procrasti-nope 💡
         promptPrefix: *prefix
     - name: "chat-gpt"
-      label: "JoltGPT 💡"
+      label: &gpt "JoltGPT 🧠"
       description: "Smart and talkative"
       preset:
         endpoint: "openAI"
-        model: "gpt-5"
+        model: "gpt-5.2"
         maxContextTokens: 128000 # Maximum context tokens
         max_tokens: 4096 # Maximum output tokens
-        modelLabel: "JoltGPT"
+        modelLabel: *gpt
         promptCache: true
         thinking: false
         greeting: Time to procrasti-nope 💡
         promptPrefix: *prefix
     - name: "chat-gpt-mini"
-      label: "JoltGPT mini ⚡️"
+      label: "JoltGPT mini 🏎️"
       description: "Smart and talkative"
       preset:
         endpoint: "openAI"
         model: "gpt-5-mini"
         maxContextTokens: 128000 # Maximum context tokens
         max_tokens: 4096 # Maximum output tokens
-        modelLabel: "JoltGPT mini"
         promptCache: true
         thinking: false
         greeting: Time to procrasti-nope ⚡️
