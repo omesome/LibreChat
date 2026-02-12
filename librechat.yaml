@@ -24,39 +24,44 @@ modelSpecs:
   #   - agents
   list:
     # agent_id needs to be the same for dev and prod
-    - name: 'jolty-low'
+    - name: 'jolty-high'
       label: 'Jolty'
-      description: 'fast and cheap'
+      description: 'wise and expensive'
       iconURL: &icon 'https://raw.githubusercontent.com/omesome/Jolt/refs/heads/main/client/public/assets/jolt-icon.png'
       default: true
       preset:
         endpoint: 'agents'
-        agent_id: 'agent_831oOK5ENwccXbwjyJv_z'
+        greeting: &greeting "Let's go from tired to inspired :)"
+        agent_id: 'agent_U4I6G7445Er9GS6jwUawr'
     - name: 'jolty-mid'
-      label: 'Jolty 💡'
+      label: 'Jolty Sonnet'
       description: 'smart and pricey'
       iconURL: *icon
       preset:
         endpoint: 'agents'
+        greeting: *greeting
         agent_id: 'agent_Rt9adjjSOh4O8CjlIJwer'
-    - name: 'jolty-high'
-      label: 'Jolty 🧠'
-      description: 'wise and expensive'
-      iconURL: *icon
-      preset:
-        endpoint: 'agents'
-        agent_id: 'agent_U4I6G7445Er9GS6jwUawr'
-    - name: 'jolt-gpt-mini'
-      label: 'JoltyGPT ⚡️'
+    - name: 'jolty-low'
+      label: 'Jolty Haiku'
       description: 'fast and cheap'
       iconURL: *icon
       preset:
         endpoint: 'agents'
-        agent_id: 'agent_OkZaufNrasuRn1H-QtxVi'
+        greeting: *greeting
+        agent_id: 'agent_831oOK5ENwccXbwjyJv_z'
     - name: 'jolt-gpt'
-      label: 'JoltyGPT 💡'
+      label: 'Jolty GPT'
       description: 'smart and pricey'
       iconURL: *icon
       preset:
         endpoint: 'agents'
+        greeting: *greeting
         agent_id: 'agent_lazj4dvLAbYysytiDOy0r'
+    - name: 'jolt-gpt-mini'
+      label: 'Jolty GPT mini'
+      description: 'fast and cheap'
+      iconURL: *icon
+      preset:
+        endpoint: 'agents'
+        greeting: *greeting
+        agent_id: 'agent_OkZaufNrasuRn1H-QtxVi'
